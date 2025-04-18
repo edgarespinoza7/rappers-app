@@ -62,7 +62,7 @@ const rappersData = [
     id: 5,
     aka: "Ana Tijoux",
     realName: "Ana María Tijoux Merino",
-    country: "France - Chile",
+    country: "Chile",
     group: false,
     members: null,
     spotifyId: "40JMTpVRUw90SrN4pFA6Mz",
@@ -523,6 +523,10 @@ const rappersData = [
   },
 ];
 
+const uniqueCountries = Array.from(
+  new Set(rappersData.map((rapper) => rapper.country))
+);
+
 // Example usage of the new property
 
 interface Rapper {
@@ -544,9 +548,12 @@ function RapperCard({
 }) {
   return (
     <Card
-      className="bg-card text-card-foreground shadow-md rounded-md hover:shadow-lg transition-shadow duration-200 cursor-pointer flex flex-col"
+      className="relative bg-card text-card-foreground shadow-md rounded-md hover:shadow-lg transition-shadow duration-200 cursor-pointer flex flex-col"
       onClick={() => onSelect(rapper)}
     >
+      <div className="absolute top-2 left-2 bg-secondary/40  p-4 rounded-md shadow-md">
+        {rapper.id}
+      </div>
       <CardContent className="flex flex-col items-center justify-start h-2/3 p-0">
         <Image
           src={userImage} // Dummy image URL
@@ -621,41 +628,79 @@ function RapperModal({
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedRapper, setSelectedRapper] = useState<Rapper | null>(null);
-  const filteredRappers = rappersData.filter((rapper) =>
-    rapper.aka.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const [selectedCountry, setSelectedCountry] = useState<string | null>(null); // New state
+  const filteredRappers = rappersData.filter((rapper) => {
+    const matchesSearch = rapper.aka
+      .toLowerCase()
+      .includes(searchTerm.toLowerCase());
+    const matchesCountry = selectedCountry
+      ? rapper.country === selectedCountry
+      : true;
+    return matchesSearch && matchesCountry;
+  });
 
   return (
     <div className="p-6">
       {/* Header Section */}
-      <header className="flex flex-col items-center justify-center mt-8 h-[30vh] bg-gradient-to-b from-gray-500/10 to-gray-700/20 rounded-lg shadow-lg p-8">
+      <header className="container mx-auto flex flex-col items-center justify-center mt-8 h-[30vh] bg-gradient-to-b from-gray-500/10 to-gray-700/20 rounded-lg shadow-lg p-8">
         <div>
-          <h1 className="text-4xl text-center mt-8 font-bold">
-            50 grandes en la historia del rap en español
+          <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-center">
+            The greatest in the history of rap in Spanish
           </h1>
           <p className="text-center mt-4">
-            Un reconocimiento a las figuras más importantes del género en
-            nuestro idioma
+            A celebration of the most influential figures in the genre.
           </p>
         </div>
         <div className="flex flex-col items-center">
           <Button className="mt-8">Get Started</Button>
         </div>
       </header>
-
-      <div className="mt-8">
+      {/* Search Bar */}
+      <div className="container flex mt-8 mx-auto">
         <Input
           type="text"
           placeholder="Search for a rapper..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="w-full rounded-md shadow-sm"
+          className="w-full rounded-md shadow-sm flex-2/3"
         />
+
+        <div className=" mx-auto border rounded-md shadow-sm flex-1/3 ml-4">
+          <select
+            value={selectedCountry || ""}
+            onChange={(e) => setSelectedCountry(e.target.value || null)}
+            className="w-full rounded-md shadow-sm p-2 bg-secondary"
+          >
+            <option value="">Rappers by Countries</option>
+            {uniqueCountries.map((country) => (
+              <option key={country} value={country}>
+                {country}
+              </option>
+            ))}
+          </select>
+        </div>
       </div>
 
+      {/* Rapper Ranking List - TOP 5 */}
+      <div className="container mx-auto mt-8">
+        <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+          Top 5
+        </h2>
+      </div>
+
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-8">
+        {filteredRappers.slice(0, 5).map((rapper) => (
+          <RapperCard
+            key={rapper.id}
+            rapper={rapper}
+            onSelect={setSelectedRapper}
+          />
+        ))}
+      </div>
+      <div className="container h-[0.5px] bg-white/50 mt-8 mx-auto"></div>
       {/* Rapper Ranking List */}
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-8">
-        {filteredRappers.map((rapper) => (
+        {filteredRappers.slice(5, 50).map((rapper) => (
           <RapperCard
             key={rapper.id}
             rapper={rapper}

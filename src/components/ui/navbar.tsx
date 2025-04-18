@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between p-6">
-      <span className="font-bold text-2xl ">50</span>
+    <nav className="container mx-auto flex items-center justify-between py-6">
+      <span className="font-bold text-2xl">50</span>
       <ul className="flex space-x-4 text-sm ">
         <li>
           <Link href="/">Home</Link>
