@@ -1,0 +1,576 @@
+[
+  {
+    "id": 1,
+    "aka": "Canserbero",
+    "realName": "Tyrone José González Oramas",
+    "dateOfBirth": "1988-03-11",
+    "country": "Venezuela",
+    "city": "Caracas",
+    "group": false,
+    "members": null,
+    "years_active": [1999, 2015],
+    "discography": [
+      {
+        "title": "Vida",
+        "year": 2010,
+        "type": "Album"
+      },
+      {
+        "title": "Muerte",
+        "year": 2012,
+        "type": "Album"
+      },
+      {
+        "title": "Can + Zoo Índigos",
+        "year": 2008,
+        "type": "Collaboration"
+      },
+      {
+        "title": "Apa y Can",
+        "year": 2013,
+        "type": "Collaboration"
+      },
+      {
+        "title": "Guía para la acción",
+        "year": 2010,
+        "type": "Mixtape"
+      },
+      {
+        "title": "Give me 5",
+        "year": 2016,
+        "type": "Mixtape"
+      }
+    ],
+    "spotifyId": "1wGIhYkKWSq4yACtTkCkSX",
+    "spotifyFollowers": 14847448
+  },
+  {
+    "id": 2,
+    "aka": "Kase.O",
+    "realName": "Javier Ibarra Ramos",
+    "dateOfBirth": "1980-03-01",
+    "country": "Spain",
+    "city": "Zaragoza",
+    "group": false,
+    "members": null,
+    "years_active": [1993, 2025],
+    "discography": [
+      {
+        "title": "Kase.O Jazz Magnetism",
+        "year": 2011,
+        "type": "Album"
+      },
+      {
+        "title": "Tutorial La Mixtape",
+        "year": 2015,
+        "type": "Mixtape"
+      },
+      {
+        "title": "Previo",
+        "year": 2015,
+        "type": "Album"
+      },
+      {
+        "title": "El Círculo",
+        "year": 2016,
+        "type": "Album"
+      },
+      {
+        "title": "El Círculo en Directo",
+        "year": 2019,
+        "type": "Album"
+      },
+      {
+        "title": "Remixes y Regalos",
+        "year": 2019,
+        "type": "Album"
+      }
+    ],
+    "spotifyId": "7GmXwGXJSsmWTkCyk5Twux",
+    "spotifyFollowers": 749718
+  },
+  {
+    "id": 3,
+    "aka": "Nach",
+    "realName": "Ignacio Fornés Olmo",
+    "dateOfBirth": "1974-10-01",
+    "country": "Spain",
+    "city": "Albacete",
+    "group": false,
+    "members": null,
+    "spotifyId": "66ArjpKRgw8vYBf9yhktto"
+  },
+  {
+    "id": 4,
+    "aka": "Vico C",
+    "realName": "Luis Armando Lozada Cruz",
+    "dateOfBirth": "1971-09-08",
+    "country": "Puerto Rico",
+    "city": "San Juan",
+    "group": false,
+    "members": null,
+    "spotifyId": "0GutRVONcyyBj1WduodFc6"
+  },
+  {
+    "id": 5,
+    "aka": "Ana Tijoux",
+    "realName": "Ana María Tijoux Merino",
+    "dateOfBirth": "1988-03-11",
+    "country": "France",
+    "city": "Lille",
+    "group": false,
+    "members": null,
+    "spotifyId": "40JMTpVRUw90SrN4pFA6Mz"
+  },
+  {
+    "id": 6,
+    "aka": "Control Machete",
+    "realName": null,
+    "dateOfBirth": null,
+    "country": "Mexico",
+    "city": "Monterrey",
+    "group": true,
+    "members": "Pato (Raúl Chapa Elizalde), Fermín IV (Fermín IV Caballero Elizondo), Toy Selectah (Antonio Hernández)",
+    "spotifyId": "628gUkswCfCS1hIOOHmIpK"
+  },
+  {
+    "id": 7,
+    "aka": "Mala Rodríguez",
+    "realName": "María Rodríguez Garrido",
+    "dateOfBirth": "1988-03-11",
+    "country": "Spain",
+    "group": false,
+    "members": null,
+    "spotifyId": "3Ces1OJeGOVGcUB0wPaPXJ"
+  },
+  {
+    "id": 8,
+    "aka": "Los Aldeanos",
+    "realName": null,
+    "dateOfBirth": null,
+    "country": "Cuba",
+    "group": true,
+    "members": "El B (Bian Oscar Rodríguez Gala), Al2 El Aldeano (Aldo Rodríguez)",
+    "spotifyId": "4Y6VI2Mfdhvb1RImggzOiY"
+  },
+  {
+    "id": 9,
+    "aka": "Orishas",
+    "realName": null,
+    "dateOfBirth": null,
+    "country": "Cuba",
+    "group": true,
+    "members": "Flaco-Pro (Liván Núñez Alemán), Roldán (Roldán González Rivero), Ruzzo (Hiram Riverí Medina), Yotuel (Yotuel Omar Romero Manzanares)",
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 10,
+    "aka": "Tego Calderón",
+    "realName": "Tegui Calderón Rosario",
+    "dateOfBirth": "1988-03-11",
+    "country": "Puerto Rico",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 11,
+    "aka": "Violadores del Verso",
+    "realName": null,
+    "dateOfBirth": null,
+    "country": "Spain",
+    "group": true,
+    "members": "Kase.O (Javier Ibarra Ramos), Sho‑Hai (Sergio Rodríguez Fernández), Lírico (David Gilaberte Miguel), R de Rumba (Rubén Cuevas García)",
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 12,
+    "aka": "Akapellah",
+    "realName": "Pedro Elías Aquino Cova",
+    "dateOfBirth": "1988-03-11",
+    "country": "Venezuela",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 13,
+    "aka": "Residente",
+    "realName": "René Pérez Joglar",
+    "dateOfBirth": "1988-03-11",
+    "country": "Puerto Rico",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 14,
+    "aka": "Rocca",
+    "realName": "Sebastián Rocca",
+    "dateOfBirth": "1988-03-11",
+    "country": "France",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 15,
+    "aka": "Arianna Puello",
+    "realName": null,
+    "dateOfBirth": "1988-03-11",
+    "country": "Dominican Republic",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 16,
+    "aka": "Alcolirykoz",
+    "realName": null,
+    "dateOfBirth": null,
+    "country": "Colombia",
+    "group": true,
+    "members": "Gambeta (Juan Carlos Fonnegra), Kaztro (Carlos Andrés), Fa‑Zeta (Gustavo Adolfo)",
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 17,
+    "aka": "Lil Supa",
+    "realName": "Marlon Morales",
+    "dateOfBirth": "1988-03-11",
+    "country": "Venezuela",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 18,
+    "aka": "Mexicano 777",
+    "realName": "Israel Perales Ortiz",
+    "dateOfBirth": "1988-03-11",
+    "country": "Puerto Rico",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 19,
+    "aka": "Rxnde Akozta",
+    "realName": "Edgar Randy Acosta Cruz",
+    "dateOfBirth": "1988-03-11",
+    "country": "Cuba",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 20,
+    "aka": "La Etnnia",
+    "realName": null,
+    "dateOfBirth": null,
+    "country": "Colombia",
+    "group": true,
+    "members": "Kany, Ata, Káiser Pimienta",
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 21,
+    "aka": "El Chojin",
+    "realName": "Domingo Antonio Edjang Moreno",
+    "dateOfBirth": "1988-03-11",
+    "country": "Spain",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 22,
+    "aka": "SFDK",
+    "realName": "Zatu; Acción Sánchez",
+    "dateOfBirth": "1988-03-11",
+    "country": "Spain",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 23,
+    "aka": "Gabylonia",
+    "realName": "María Gabriela Vivas Sojo",
+    "dateOfBirth": "1988-03-11",
+    "country": "Venezuela",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 24,
+    "aka": "Illya Kuryaki & the Valderramas",
+    "realName": null,
+    "dateOfBirth": null,
+    "country": "Argentina",
+    "group": true,
+    "members": "Dante Spinetta, Emmanuel Horvilleur",
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 25,
+    "aka": "Cartel de Santa",
+    "realName": null,
+    "dateOfBirth": null,
+    "country": "Mexico",
+    "group": true,
+    "members": "Babo (Eduardo Davalos de Luna), Rowan Rabia (Román Rodríguez), Dharius",
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 26,
+    "aka": "ToteKing",
+    "realName": "Manuel González Rodríguez",
+    "dateOfBirth": null,
+    "country": "Spain",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 27,
+    "aka": "WOS",
+    "realName": "Valentín Oliva",
+    "dateOfBirth": "1988-03-11",
+    "country": "Argentina",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 28,
+    "aka": "Alemán",
+    "realName": "Erick Raúl Alemán Ramírez",
+    "dateOfBirth": "1988-03-11",
+    "country": "Mexico",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 29,
+    "aka": "7 notas 7 colores",
+    "realName": "Oliver Gallego (Mucho Muchacho)",
+    "dateOfBirth": "1988-03-11",
+    "country": "Spain",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 30,
+    "aka": "Trueno",
+    "realName": "Mateo Palacios Corazzina",
+    "dateOfBirth": "1988-03-11",
+    "country": "Argentina",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 31,
+    "aka": "Santa Fe Klan",
+    "realName": "Ángel Jair Quezada Jasso",
+    "dateOfBirth": "1988-03-11",
+    "country": "Mexico",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 32,
+    "aka": "Norick",
+    "realName": "Norick Gamarra Guevara",
+    "dateOfBirth": "1988-03-11",
+    "country": "Peru",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 33,
+    "aka": "Original Juan",
+    "realName": null,
+    "dateOfBirth": "1988-03-11",
+    "country": "Dominican Republic",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 34,
+    "aka": "Foyone",
+    "realName": "Pedro Armando Navarro",
+    "dateOfBirth": "1988-03-11",
+    "country": "Spain",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 35,
+    "aka": "Apache",
+    "realName": "Larry Rada",
+    "dateOfBirth": "1988-03-11",
+    "country": "Venezuela",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 36,
+    "aka": "Aczino",
+    "realName": "Mauricio Hernández González",
+    "dateOfBirth": "1988-03-11",
+    "country": "Mexico",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 37,
+    "aka": "Gera MX",
+    "realName": "Gerardo Daniel Torres Montante",
+    "dateOfBirth": "1988-03-11",
+    "country": "Mexico",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 38,
+    "aka": "Rapper School",
+    "realName": null,
+    "dateOfBirth": null,
+    "country": "Peru",
+    "group": true,
+    "members": "Norick (Braulio Norick Gamarra Guevara), Warrior (Giancarlo Quiroz Gonzales), Street (Miguel Ángel Calle Cornejo), DJ Deportado",
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 39,
+    "aka": "Daddy Yankee",
+    "realName": "Ramón Luis Ayala Rodríguez",
+    "dateOfBirth": "1988-03-11",
+    "country": "Puerto Rico",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 40,
+    "aka": "N. Hardem",
+    "realName": "Nelson Martínez",
+    "dateOfBirth": "1988-03-11",
+    "country": "Colombia",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 41,
+    "aka": "Crack Family",
+    "realName": "Cejaz Negraz; Manny",
+    "dateOfBirth": "1988-03-11",
+    "country": "Colombia",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 42,
+    "aka": "Las Ninyas del Corro",
+    "realName": "Felinna Vallejo; Laüra Bonsai",
+    "dateOfBirth": "1988-03-11",
+    "country": "Spain",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 43,
+    "aka": "Hispana",
+    "realName": "Patricia Polet",
+    "dateOfBirth": "1988-03-11",
+    "country": "Mexico",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 44,
+    "aka": "Mare Advertencia Lirika",
+    "realName": null,
+    "dateOfBirth": "1988-03-11",
+    "country": "Mexico",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 45,
+    "aka": "Rapsusklei",
+    "realName": "Diego Gil Fernández",
+    "dateOfBirth": "1988-03-11",
+    "country": "Spain",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 46,
+    "aka": "Portavoz",
+    "realName": null,
+    "dateOfBirth": "1988-03-11",
+    "country": "Chile",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 47,
+    "aka": "Tempo",
+    "realName": "David Sánchez Badillo",
+    "dateOfBirth": "1988-03-11",
+    "country": "Puerto Rico",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 48,
+    "aka": "Lápiz Conciente",
+    "realName": "Avelino Junior Figueroa Rodríguez",
+    "dateOfBirth": "1988-03-11",
+    "country": "Dominican Republic",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 49,
+    "aka": "Snow Tha Product",
+    "realName": "Claudia Alexandra Madriz Meza",
+    "dateOfBirth": "1988-03-11",
+    "country": "United States",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  },
+  {
+    "id": 50,
+    "aka": "Bocafloja",
+    "realName": "Aldo Villegas",
+    "dateOfBirth": "1988-03-11",
+    "country": "Mexico",
+    "group": false,
+    "members": null,
+    "spotifyUrl": "https://open.spotify.com/embed/artist/1wGIhYkKWSq4yACtTkCkSX?utm_source=generator&theme=0"
+  }
+]
