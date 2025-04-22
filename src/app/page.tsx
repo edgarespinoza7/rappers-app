@@ -1,4 +1,5 @@
 "use client";
+
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -18,8 +19,9 @@ import {
   DialogContent,
   DialogHeader,
   DialogTitle,
-  DialogDescription,
+  // DialogDescription,
 } from "@/components/ui/dialog";
+import { DialogDescription } from "@radix-ui/react-dialog";
 
 interface Rapper {
   id: number;
@@ -29,7 +31,7 @@ interface Rapper {
   city?: string | null; // Added optional city property
   dateOfBirth?: string | null; // Added optional dateOfBirth property
   group: boolean;
-  members: string | null;
+  members: string[] | null;
   spotifyId?: string; // Added optional spotifyId property
 }
 
@@ -53,6 +55,7 @@ function RapperCard({
           src={userImage} // Dummy image URL
           alt={rapper.aka}
           className="w-full h-full object-cover overflow-hidden rounded-t-md"
+          priority={true} // {false} | {true}
           width={200}
           height={200}
         />
@@ -81,7 +84,9 @@ function RapperModal({
       <DialogContent className="sm:max-w-[425px] bg-background text-foreground rounded-md shadow-md">
         <DialogHeader>
           <DialogTitle>{rapper.aka}</DialogTitle>
-          {/* <DialogDescription>Learn more about {rapper.aka}</DialogDescription> */}
+          <DialogDescription className="text-muted-foreground text-sm text-center">
+            Learn more about {rapper.aka}
+          </DialogDescription>
         </DialogHeader>
         <div className="flex flex-col items-center justify-center">
           <Image
@@ -90,28 +95,41 @@ function RapperModal({
             className="rounded-full w-32 h-32 object-cover mb-4"
             width={128}
             height={128}
+            priority={true} // {false} | {true}
             onClick={() => onClose()}
           />
           <div className="text-sm text-muted-foreground">
             {rapper.realName ? (
               <p>
                 <span className="font-semibold ">Real Name:</span>{" "}
-                {rapper.realName}
+                {rapper.realName}.
               </p>
             ) : (
               <></>
             )}
 
             <p>
-              <span className="font-semibold ">Origin:</span> {rapper.city},{" "}
-              {rapper.country}
+              <span className="font-semibold ">Country:</span> {rapper.country}.
             </p>
-
             {rapper.group ? (
-              <p>
-                <span className="font-semibold">Group Members:</span>{" "}
-                {rapper.members || "N/A"}
-              </p>
+              <div>
+                <p>
+                  <span className="font-semibold">Group Members:</span>{" "}
+                </p>
+                {rapper.members && (
+                  <ul>
+                    {rapper.members &&
+                      rapper.members.map((member) => (
+                        <li
+                          key={member.trim()}
+                          className="list-disc marker:text-gray-400"
+                        >
+                          {member.trim()}
+                        </li>
+                      ))}
+                  </ul>
+                )}
+              </div>
             ) : (
               <></>
             )}
@@ -121,21 +139,23 @@ function RapperModal({
                 {rapper.dateOfBirth
                   ? new Date(rapper.dateOfBirth).toLocaleDateString("es-ES")
                   : "N/A"}
+                .
               </p>
             ) : (
               <></>
             )}
           </div>
-
-          <iframe
-            style={{ borderRadius: "14px" }}
-            src={`https://open.spotify.com/embed/artist/${rapper.spotifyId}?utm_source=generator&theme=0`}
-            width="100%"
-            height="362"
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"
-            className="mt-8"
-          ></iframe>
+          <div className="w-[100%] mt-8 ">
+            <iframe
+              style={{ borderRadius: "12px" }}
+              src={`https://open.spotify.com/embed/artist/${rapper.spotifyId}?utm_source=generator&theme=0`}
+              width="100%"
+              height="362"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+        
+          </div>
         </div>
       </DialogContent>
     </Dialog>
@@ -153,7 +173,7 @@ export default function Home() {
 
   const uniqueCountries = Array.from(
     new Set(rappersData.map((rapper) => rapper.country))
-  );
+  ).sort((a, b) => a.localeCompare(b));
 
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedRapper, setSelectedRapper] = useState<Rapper | null>(null);
@@ -177,24 +197,17 @@ export default function Home() {
             The greatest in the history of rap in Spanish
           </h1>
           <p className="text-center mt-4">
-            A celebration of the most influential figures in the genre.
+            A celebration of the most influential figures in the genre
           </p>
         </div>
-        <div className="flex flex-col items-center">
+        {/* <div className="flex flex-col items-center">
           <Button className="mt-8">Get Started</Button>
-        </div>
+        </div> */}
       </header>
 
       {/* Search Bar */}
       <div className="container flex mt-8 mx-auto">
-        <Input
-          type="text"
-          placeholder="Search for a rapper..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          className="w-full rounded-md shadow-sm flex-2/3"
-        />
-        <div className=" mx-auto border rounded-md shadow-sm flex-1/3 ml-4">
+        <div className=" mx-auto border rounded-md shadow-sm flex-1/4 mr-4">
           <select
             value={selectedCountry || ""}
             onChange={(e) => setSelectedCountry(e.target.value || null)}
@@ -208,16 +221,24 @@ export default function Home() {
             ))}
           </select>
         </div>
+
+        <Input
+          type="text"
+          placeholder="Search a rapper by name..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="w-full rounded-md shadow-sm flex-3/4"
+        />
       </div>
       {/* Rapper Ranking List - TOP 5 */}
-      <div className="container mx-auto mt-8">
+      {/* <div className="container mx-auto mt-8">
         <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0">
           Top 5
         </h2>
-      </div>
+      </div> */}
 
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-8">
-        {filteredRappers.slice(0, 5).map((rapper) => (
+        {filteredRappers.map((rapper) => (
           <RapperCard
             key={rapper.id}
             rapper={rapper}
@@ -225,9 +246,9 @@ export default function Home() {
           />
         ))}
       </div>
-      <div className="container h-[0.5px] bg-white/50 mt-8 mx-auto"></div>
+      {/* <div className="container h-[0.5px] bg-white/50 mt-8 mx-auto"></div> */}
       {/* Rapper Ranking List */}
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-8">
+      {/* <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-8">
         {filteredRappers.slice(5, 50).map((rapper) => (
           <RapperCard
             key={rapper.id}
@@ -235,7 +256,7 @@ export default function Home() {
             onSelect={setSelectedRapper}
           />
         ))}
-      </div>
+      </div> */}
 
       {/* Rapper Details Modal */}
       <RapperModal
